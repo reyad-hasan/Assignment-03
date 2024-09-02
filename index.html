@@ -34,7 +34,7 @@
                         'title-color2': '#1C1C1C',
                         'nav-color': '#494949',
                         'description-color': '#737373',
-                        'main-bg': '#F8F8F8',
+                        'main-bg': '#f8f8f894',
                         'second-bg': '#F4F4F4',
                     }
                 }
@@ -53,10 +53,10 @@
                     <div class="navbar-start">
                         <div class="dropdown">
                             <div tabindex="0" role="button"
-                                class="rounded-full lg:hidden p-[5px] border bg-white flex items-center justify-center">
+                                class="rounded-full lg:hidden text-title-color p-[5px] border bg-white flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                         d="M4 6h16M4 12h8m-8 6h16" />
                                 </svg>
                             </div>
@@ -101,7 +101,7 @@
                             </span>
                         </button>
 
-                        <button class="text-4xl font-bold flex items-center md:hidden" href="#">
+                        <button class="text-4xl font-bold text-title-color flex items-center md:hidden" href="#">
                             <span
                                 class="bg-primary-color rounded-full h-[35px] w-[35px] mr-1 flex items-center justify-center p-5">
                                 <i class="fa-solid fa-arrow-right -rotate-45 text-3xl"></i>
@@ -139,11 +139,75 @@
                 </div>
             </section>
         </section>
-
     </header>
 
     <!-- main section -->
     <main>
+        <!-- three section main bg -->
+        <section class="bg-second-bg">
+            <!-- three section container mx-auto -->
+            <section class="md:container mx-auto py-20 px-4 xl:px-0 relative">
+                <!-- vector icon image position box -->
+                <div class="absolute -left-20 hidden md:inline-flex">
+                    <img src="./assets/Vector.png" alt="">
+                </div>
+                <!-- We design thoughtful section -->
+                <section class="md:flex gap-5">
+                    <!-- text contend -->
+                    <div class="flex-1">
+                        <!-- btn and title contend -->
+                        <div>
+                            <div class="md:mt-12">
+                                <button
+                                    class="bg-white text-nav-color px-3 py-1 text-lg font-medium rounded-[16px] hover:bg-[#d4f6ae]"><span><i
+                                            class="fa-solid fa-arrow-right mr-1"></i></span> About Us</button>
+                                <h2 class="text-title-color text-3xl lg:text-4xl xl:text-6xl font-black mt-4 mb-6">We
+                                    design thoughtful, liveable spaces</h2>
+                                <p class="text-nav-color font-medium">We believe that great architecture begins with
+                                    understanding the unique needs,
+                                    desires, and
+                                    lifestyles of those who will inhabit the spaces we create. </p>
+                            </div>
+                        </div>
+                        <!-- Commercial and Residential box -->
+                        <div>
+                            <!-- commercial contend -->
+                            <div class="flex items-center gap-5 p-5 bg-white rounded-lg my-5">
+                                <!-- img box -->
+                                <div class="">
+                                    <img class="w-48 md:w-[75px]" src="./assets/commercial.png" alt="">
+                                </div>
+                                <!-- contend box -->
+                                <div>
+                                    <h3 class="text-nav-color font-bold text-xl">Commercial</h3>
+                                    <p class="text-description-color font-medium md:w-5/6 text-[15px] mt-1">Our
+                                        commercial house designs strike the perfect balance between elegance and
+                                        functionality.</p>
+                                </div>
+                            </div>
+                            <!-- Residential contend -->
+                            <div class="flex items-center gap-5 p-5 bg-white rounded-lg">
+                                <!-- img box -->
+                                <div class="">
+                                    <img class="w-60 md:w-[85px]" src="./assets/residential.png" alt="">
+                                </div>
+                                <!-- contend box -->
+                                <div>
+                                    <h3 class="text-nav-color font-bold text-xl">Residential</h3>
+                                    <p class="text-description-color font-medium md:w-5/6 text-[15px] mt-1">we
+                                        specialize in designing residential houses that truly feel like home. Our
+                                        approach to residential unique lifestyles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image contend -->
+                    <div class="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+                        <img src="./assets/Rectangle.png" alt="">
+                    </div>
+                </section>
+            </section>
+        </section>
     </main>
 
     <!-- footer section -->
